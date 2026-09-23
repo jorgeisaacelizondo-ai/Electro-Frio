@@ -15,17 +15,41 @@ const whatsappIcon = (
   </svg>
 );
 
+const mapIcon = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    className="w-7 h-7"
+  >
+    <path d="M12 2.25a7.5 7.5 0 017.5 7.5c0 5.71-7.5 12-7.5 12S4.5 15.46 4.5 9.75A7.5 7.5 0 0112 2.25zm0 2.25a5.25 5.25 0 00-5.25 5.25c0 3.74 4.18 8.52 5.25 9.58 1.07-1.06 5.25-5.84 5.25-9.58A5.25 5.25 0 0012 4.5zm0 2.25a3 3 0 110 6 3 3 0 010-6z" />
+  </svg>
+);
+
 export const WhatsAppButton = () => {
   return (
-    <a
-      href={companyData.contacto.whatsappUrl}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="fixed bottom-6 right-6 z-50 grid place-items-center w-14 h-14 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300 animate-bounce"
-      aria-label="Contactar por WhatsApp"
-    >
-      {whatsappIcon}
-    </a>
+    <div className="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+      <a
+        href={companyData.contacto.mapsUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="grid place-items-center w-14 h-14 bg-blue-500 rounded-full shadow-lg hover:bg-blue-600 transition-colors duration-300 animate-bounce"
+        aria-label="Ver ubicación en Google Maps"
+        style={{ animationDelay: '0.1s' }}
+      >
+        {mapIcon}
+      </a>
+
+      <a
+        href={companyData.contacto.whatsappUrl}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="grid place-items-center w-14 h-14 bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300 animate-bounce"
+        aria-label="Contactar por WhatsApp"
+      >
+        {whatsappIcon}
+      </a>
+    </div>
   );
 };
 

@@ -7,41 +7,11 @@ export const companyData = {
       imagen: "/images/tech_superior.jpg"
     },
     {
-      nombre: "Carlos Martínez",
-      cargo: "Técnico Superior",
-      descripcion: "Experto en instalaciones comerciales e industriales complejas.",
-      imagen: "/images/tech_superior.jpg"
-    },
-    {
-      nombre: "Laura Gómez",
-      cargo: "Administración",
-      descripcion: "Gestión de turnos, presupuestos y atención al cliente.",
-      imagen: "/images/admin.jpg"
-    },
-    {
-      nombre: "Juan Pérez",
-      cargo: "Técnico",
+      nombre: "Paez, Jose Ramiro",
+      cargo: "Dirección general / Téc. Superior",
       descripcion: "Especialista en mantenimiento preventivo de aires acondicionados.",
       imagen: "/images/tech.jpg"
     },
-    {
-      nombre: "Miguel Silva",
-      cargo: "Técnico",
-      descripcion: "Soporte técnico y reparación de heladeras comerciales.",
-      imagen: "/images/tech.jpg"
-    },
-    {
-      nombre: "Diego López",
-      cargo: "Técnico",
-      descripcion: "Instalaciones eléctricas residenciales certificadas.",
-      imagen: "/images/tech.jpg"
-    },
-    {
-      nombre: "Martín Díaz",
-      cargo: "Técnico",
-      descripcion: "Resolución de emergencias y diagnóstico rápido.",
-      imagen: "/images/tech.jpg"
-    }
   ],
   servicios: [
     "Servicio técnico integral",
@@ -59,5 +29,9 @@ export const companyData = {
     instagramUrl: "https://www.instagram.com/electrofriolr",
     whatsapp: "3804349027",
     whatsappUrl: "https://wa.me/5493804349027",
+    mapsUrl: "https://maps.app.goo.gl/eTM7RfKnZbjCNiLS8",
+    googleBusinessProfileId: "16905383072694696618",
+    googlePlaceId: "ChIJ35kZlXbbJ5QRtmUPQGrDJqQ",
+    googleWriteReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJ35kZlXbbJ5QRtmUPQGrDJqQ",
   }
 };

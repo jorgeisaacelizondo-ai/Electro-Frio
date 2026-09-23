@@ -23,7 +23,7 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&display=swap" rel="stylesheet" />
 
   <!-- Font Awesome 6 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -33,6 +33,9 @@
 
   <!-- Estilos propios -->
   <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <!-- Elfsight Google Reviews Widget -->
+  <script src="https://static.elfsight.com/platform/platform.js" async></script>
 </head>
 <body>
 
@@ -70,6 +73,7 @@
       <li><a href="#servicios"> <i class="fa-solid fa-gear fa-fw"></i>     Servicios</a></li>
       <li><a href="#trabajos">  <i class="fa-solid fa-images fa-fw"></i>   Trabajos</a></li>
       <li><a href="#testimonios"><i class="fa-solid fa-star fa-fw"></i>    Testimonios</a></li>
+      <li><a href="#faq">       <i class="fa-solid fa-circle-question fa-fw"></i> Preguntas</a></li>
       <li><a href="#contacto">  <i class="fa-solid fa-envelope fa-fw"></i> Contacto</a></li>
     </ul>
 
@@ -79,7 +83,7 @@
       <a href="https://wa.me/5493804349027" target="_blank" rel="noopener">
         <i class="fa-brands fa-whatsapp fa-fw"></i> 380 434-9027
       </a>
-      <a href="https://maps.app.goo.gl/xxxx" target="_blank" rel="noopener">
+      <a href="https://maps.app.goo.gl/eTM7RfKnZbjCNiLS8" target="_blank" rel="noopener">
         <i class="fa-solid fa-location-dot fa-fw"></i> San Martín 375, La Rioja
       </a>
       <a href="https://www.facebook.com/electrofriolr" target="_blank" rel="noopener">
@@ -115,6 +119,7 @@
       <a href="#servicios">Servicios</a>
       <a href="#trabajos">Trabajos</a>
       <a href="#testimonios">Testimonios</a>
+      <a href="#faq">Preguntas</a>
       <a href="#contacto">Contacto</a>
     </nav>
 
@@ -154,76 +159,31 @@
     <div class="hero-overlay"></div>
     <div class="hero-grid"></div>
 
-    <!-- Swiper de textos rotantes -->
+    <!-- Contenido Hero: Texto único alineado abajo a la izquierda -->
     <div class="hero-content">
-      <div class="swiper swiper-hero">
-        <div class="swiper-wrapper">
-
-          <!-- Slide 1 -->
-          <div class="swiper-slide hero-slide">
-            <span class="hero-badge"><i class="fa-brands fa-whatsapp"></i> Atención por WhatsApp</span>
-            <h1 class="hero-title">
-              Venta y servicios en<br>
-              <span class="neon-accent">electricidad y refrigeración</span>
-            </h1>
-            <p class="hero-desc">
-              Reparación de aires acondicionados, service, instalaciones y mantenimiento integral. Consultanos directo por WhatsApp con respuesta rápida.
-            </p>
-            <div class="hero-cta">
-              <a href="https://wa.me/5493804349027?text=Hola!%20Quisiera%20hacer%20una%20consulta%20sobre%20sus%20servicios." class="btn btn-wa btn-lg" target="_blank" rel="noopener">
-                <i class="fa-brands fa-whatsapp"></i> Atención por WhatsApp
-              </a>
-              <a href="#servicios" class="btn btn-primary btn-lg">
-                <i class="fa-solid fa-gear"></i> Ver servicios
-              </a>
-            </div>
+      <div class="container hero-container-bottom">
+        <div class="hero-text-block fade-up">
+          <!-- <span class="hero-badge"><i class="fa-brands fa-whatsapp"></i> Atención Inmediata en La Rioja</span> -->
+          <h1 class="hero-title">
+            Venta y servicios en<br>
+            <span class="neon-accent">ELECTRICIDAD y<br>REFRIGERACIÓN</span>
+          </h1>
+          <p class="hero-desc">
+            Reparación de aires acondicionados, service técnico, instalaciones y mantenimiento integral para hogares y comercios. Consultanos directo por WhatsApp o por nuestro local.
+          </p>
+          <div class="hero-cta">
+            <a href="https://wa.me/5493804349027?text=Hola!%20Quisiera%20hacer%20una%20consulta%20sobre%20sus%20servicios." class="btn btn-wa" target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp
+            </a>
+            <a href="#servicios" class="btn btn-primary">
+              <i class="fa-solid fa-gear"></i>Servicios
+            </a>
+            <a href="https://maps.app.goo.gl/eTM7RfKnZbjCNiLS8" class="btn btn-maps" target="_blank" rel="noopener">
+              <i class="fa-solid fa-location-dot"></i> Maps
+            </a>
           </div>
-
-          <!-- Slide 2 -->
-          <div class="swiper-slide hero-slide">
-            <span class="hero-badge"><i class="fa-solid fa-snowflake"></i> Climatización y Service</span>
-            <h1 class="hero-title">
-              Reparación de aires acondicionados<br>
-              <span class="neon-accent">service y mantenimiento</span>
-            </h1>
-            <p class="hero-desc">
-              Limpieza profunda, recarga de gas y solución a fallas eléctricas con técnicos certificados en La Rioja.
-            </p>
-            <div class="hero-cta">
-              <a href="https://wa.me/5493804349027?text=Hola!%20Necesito%20reparación%20o%20service%20de%20aire%20acondicionado." class="btn btn-wa btn-lg" target="_blank" rel="noopener">
-                <i class="fa-brands fa-whatsapp"></i> Consultar por WhatsApp
-              </a>
-              <a href="#contacto" class="btn btn-white btn-lg">
-                <i class="fa-solid fa-calendar-check"></i> Solicitar presupuesto
-              </a>
-            </div>
-          </div>
-
-          <!-- Slide 3 -->
-          <div class="swiper-slide hero-slide">
-            <span class="hero-badge"><i class="fa-solid fa-bolt"></i> Instalaciones y Frío Comercial</span>
-            <h1 class="hero-title">
-              Instalaciones eléctricas<br>
-              y <span class="neon-accent">refrigeración comercial</span>
-            </h1>
-            <p class="hero-desc">
-              Soluciones para hogares, locales y empresas. Mat. CACAAV Nº&nbsp;00-17284 con garantía en cada trabajo.
-            </p>
-            <div class="hero-cta">
-              <a href="https://wa.me/5493804349027?text=Hola!%20Quisiera%20consultar%20por%20instalaciones%20eléctricas%20o%20refrigeración." class="btn btn-wa btn-lg" target="_blank" rel="noopener">
-                <i class="fa-brands fa-whatsapp"></i> Hablar con un técnico
-              </a>
-              <a href="#trabajos" class="btn btn-primary btn-lg">
-                <i class="fa-solid fa-images"></i> Ver trabajos
-              </a>
-            </div>
-          </div>
-
-        </div><!-- /swiper-wrapper -->
-
-        <!-- Paginación -->
-        <div class="swiper-pagination" style="bottom:2rem;"></div>
-      </div><!-- /swiper -->
+        </div>
+      </div>
     </div><!-- /hero-content -->
   </div>
 </section>
@@ -262,7 +222,6 @@
 </div>
 
 
-
 <!-- ============================================================
      SERVICIOS
      ============================================================ -->
@@ -276,107 +235,86 @@
   </div>
 
   <div class="container container-wide">
-    <div class="servicios-wrap fade-up">
-      <div class="swiper swiper-servicios">
-        <div class="swiper-wrapper">
+    <div class="grid-servicios fade-up">
 
-          <!-- Servicio 1 -->
-          <div class="swiper-slide">
-            <div class="card-servicio">
-              <div class="card-srv-bg">
-                <img src="/img/reaparo-aire.png" alt="Servicio técnico de aires acondicionados" />
-              </div>
-              <div class="card-srv-overlay">
-                <div class="srv-neon-bar"></div>
-                <h3>Servicio técnico integral</h3>
-                <p>Diagnóstico preciso y reparación de equipos eléctricos y de refrigeración con repuestos de calidad.</p>
-                <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio 2 -->
-          <div class="swiper-slide">
-            <div class="card-servicio">
-              <div class="card-srv-bg">
-                <img src="/img/Spending a little bit now can help you save a lot….jpg" alt="Instalaciones y mantenimiento" />
-              </div>
-              <div class="card-srv-overlay">
-                <div class="srv-neon-bar"></div>
-                <h3>Instalaciones y mantenimiento</h3>
-                <p>Instalación de aires acondicionados, tableros eléctricos, termotanques y sistemas de climatización.</p>
-                <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio 3 -->
-          <div class="swiper-slide">
-            <div class="card-servicio">
-              <div class="card-srv-bg">
-                <img src="/img/Descubre nuestra variedad de bombillas….jpg" alt="Soporte técnico especializado" />
-              </div>
-              <div class="card-srv-overlay">
-                <div class="srv-neon-bar"></div>
-                <h3>Soporte técnico especializado</h3>
-                <p>Asesoramiento y soporte experto para resolver cualquier falla eléctrica o de refrigeración rápidamente.</p>
-                <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio 4 -->
-          <div class="swiper-slide">
-            <div class="card-servicio">
-              <div class="card-srv-bg">
-                <img src="/img/¡Dale un toque de modernidad a tu hogar con….jpg" alt="Instalaciones eléctricas modernas" />
-              </div>
-              <div class="card-srv-overlay">
-                <div class="srv-neon-bar"></div>
-                <h3>Mantenimiento comercial</h3>
-                <p>Contratos de mantenimiento preventivo para locales, restaurantes, supermercados y negocios.</p>
-                <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio 5 -->
-          <div class="swiper-slide">
-            <div class="card-servicio">
-              <div class="card-srv-bg">
-                <img src="/img/New Pol Antrasit Çim Aydınlatma.jpg" alt="Instalaciones de iluminación exterior" />
-              </div>
-              <div class="card-srv-overlay">
-                <div class="srv-neon-bar"></div>
-                <h3>Servicio técnico en refrigeración</h3>
-                <p>Reparación y mantenimiento de heladeras comerciales, cámaras de frío, vitrinas y equipos frigoríficos.</p>
-                <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Servicio 6 -->
-          <div class="swiper-slide">
-            <div class="card-servicio">
-              <div class="card-srv-bg">
-                <img src="/img/03bb3af3-42fd-4543-b3e9-83c321df7deb.jpg" alt="Instalaciones y reparaciones eléctricas" />
-              </div>
-              <div class="card-srv-overlay">
-                <div class="srv-neon-bar"></div>
-                <h3>Reparación, instalación y service</h3>
-                <p>Atendemos cualquier falla eléctrica o de frío. Desde un tomacorriente hasta instalaciones industriales completas.</p>
-                <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div><!-- /swiper-wrapper -->
-
-        <!-- Controles -->
-        <div class="swiper-pagination" style="bottom:0;"></div>
-        <div class="swiper-button-prev swiper-srv-prev"></div>
-        <div class="swiper-button-next swiper-srv-next"></div>
+      <!-- Servicio 1 -->
+      <div class="card-servicio">
+        <div class="card-srv-bg">
+          <img src="/img/reaparo-aire.png" alt="Servicio técnico de aires acondicionados" />
+        </div>
+        <div class="card-srv-overlay">
+          <div class="srv-neon-bar"></div>
+          <h3>Servicio técnico integral</h3>
+          <p>Diagnóstico preciso y reparación de equipos eléctricos y de refrigeración con repuestos de calidad.</p>
+          <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
+
+      <!-- Servicio 2 -->
+      <div class="card-servicio">
+        <div class="card-srv-bg">
+          <img src="/img/Spending a little bit now can help you save a lot….jpg" alt="Instalaciones y mantenimiento" />
+        </div>
+        <div class="card-srv-overlay">
+          <div class="srv-neon-bar"></div>
+          <h3>Instalaciones y mantenimiento</h3>
+          <p>Instalación de aires acondicionados, tableros eléctricos, termotanques y sistemas de climatización.</p>
+          <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Servicio 3 -->
+      <div class="card-servicio">
+        <div class="card-srv-bg">
+          <img src="/img/Descubre nuestra variedad de bombillas….jpg" alt="Soporte técnico especializado" />
+        </div>
+        <div class="card-srv-overlay">
+          <div class="srv-neon-bar"></div>
+          <h3>Soporte técnico especializado</h3>
+          <p>Asesoramiento y soporte experto para resolver cualquier falla eléctrica o de refrigeración rápidamente.</p>
+          <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Servicio 4 -->
+      <div class="card-servicio">
+        <div class="card-srv-bg">
+          <img src="/img/¡Dale un toque de modernidad a tu hogar con….jpg" alt="Instalaciones eléctricas modernas" />
+        </div>
+        <div class="card-srv-overlay">
+          <div class="srv-neon-bar"></div>
+          <h3>Mantenimiento comercial</h3>
+          <p>Contratos de mantenimiento preventivo para locales, restaurantes, supermercados y negocios.</p>
+          <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Servicio 5 -->
+      <div class="card-servicio">
+        <div class="card-srv-bg">
+          <img src="/img/New Pol Antrasit Çim Aydınlatma.jpg" alt="Instalaciones de iluminación exterior" />
+        </div>
+        <div class="card-srv-overlay">
+          <div class="srv-neon-bar"></div>
+          <h3>Servicio en refrigeración</h3>
+          <p>Reparación y mantenimiento de heladeras comerciales, cámaras de frío, vitrinas y equipos frigoríficos.</p>
+          <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Servicio 6 -->
+      <div class="card-servicio">
+        <div class="card-srv-bg">
+          <img src="/img/03bb3af3-42fd-4543-b3e9-83c321df7deb.jpg" alt="Instalaciones y reparaciones eléctricas" />
+        </div>
+        <div class="card-srv-overlay">
+          <div class="srv-neon-bar"></div>
+          <h3>Reparación y service eléctrico</h3>
+          <p>Atendemos cualquier falla eléctrica o de frío. Desde un tomacorriente hasta instalaciones completas.</p>
+          <a href="#contacto" class="btn btn-primary">Solicitar <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -520,6 +458,10 @@
   <div class="container">
     <div class="bsrv-inner fade-up">
       <div class="bsrv-text">
+        <div class="emergency-badge">
+          <span class="pulse-dot"></span>
+          <span>Atención rápida para urgencias y comercio</span>
+        </div>
         <span class="eyebrow">Servicio técnico y posventa</span>
         <h2>¿Necesitás <span class="accent">reparar o instalar</span><br>tu equipo?</h2>
         <p>Estamos para ayudarte. Coordinamos una visita técnica y te entregamos un presupuesto claro y sin cargos ocultos.</p>
@@ -537,68 +479,131 @@
 </section>
 
 <!-- ============================================================
-     TESTIMONIOS
+     RESEÑAS & OPINIONES DE GOOGLE (ID Negocio: 16905383072694696618)
      ============================================================ -->
 <section id="testimonios" class="section">
   <div class="container">
     <div class="text-center fade-up">
-      <span class="eyebrow">Lo que dicen nuestros clientes</span>
-      <h2 class="section-title">La <span class="accent">experiencia ElectroFrio</span></h2>
+      <span class="eyebrow"><i class="fa-brands fa-google" style="color:var(--neon);margin-right:0.35rem;"></i> Opiniones reales verificadas</span>
+      <h2 class="section-title">Reseñas de nuestros <span class="accent">clientes en Google</span></h2>
+      <p class="section-desc">Experiencias y calificaciones reales de hogares y comercios de La Rioja que confían en ElectroFrio.</p>
     </div>
 
-    <div class="grid-testimonios">
-
-      <div class="card-test fade-up d1">
-        <div class="quote-mark">"</div>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
+    <!-- Barra de Calificación Oficial de Google -->
+    <div class="google-header-card fade-up">
+      <div class="ghc-left">
+        <div class="ghc-google-icon">
+          <svg viewBox="0 0 24 24" width="34" height="34" aria-hidden="true">
+            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+            <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.97 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+          </svg>
         </div>
-        <blockquote>Excelente servicio. Vinieron rápido y solucionaron el problema del aire acondicionado en una sola visita. Muy prolijos y profesionales. ¡100% recomendados!</blockquote>
-        <div class="test-author">
-          <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-          <div>
-            <p class="author-name">Marcela G.</p>
-            <p class="author-label">Cliente residencial — La Rioja</p>
+        <div class="ghc-rating-info">
+          <div class="ghc-stars-row">
+            <span class="ghc-score">5.0</span>
+            <div class="ghc-stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <span class="ghc-sub">Calificación promedio en Google Reviews · <strong>ELECTROFRÍO</strong></span>
+        </div>
+      </div>
+      <div class="ghc-actions">
+        <a href="https://search.google.com/local/writereview?placeid=ChIJ35kZlXbbJ5QRtmUPQGrDJqQ" target="_blank" rel="noopener" class="btn btn-wa">
+          <i class="fa-solid fa-pen-to-square"></i> Dejar una reseña
+        </a>
+        <a href="https://maps.google.com/?cid=16905383072694696618" target="_blank" rel="noopener" class="btn btn-maps">
+          <i class="fa-brands fa-google"></i> Ver en Google Maps
+        </a>
+      </div>
+    </div>
+
+    <!-- Widget Elfsight Google Reviews (Actualización automática en tiempo real) -->
+    <div class="elfsight-widget-container fade-up">
+      <div class="elfsight-app-3dc2429b-f2c0-46b3-8af3-a3b4cf0b1aa7" data-elfsight-app-lazy></div>
+    </div>
+  </div>
+</section>
+
+<div class="neon-divider"></div>
+
+<!-- ============================================================
+     PREGUNTAS FRECUENTES (FAQ Acordeón - UI/UX Pro Max)
+     ============================================================ -->
+<section id="faq" class="section">
+  <div class="container">
+    <div class="text-center fade-up">
+      <span class="eyebrow">Dudas habituales</span>
+      <h2 class="section-title">Preguntas <span class="accent">frecuentes</span></h2>
+      <p class="section-desc">Todo lo que necesitás saber sobre nuestros servicios, tiempos de respuesta y garantías de trabajo.</p>
+    </div>
+
+    <div class="faq-accordion-wrap fade-up">
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span class="faq-q-text">¿Cómo solicito un presupuesto o visita técnica?</span>
+          <span class="faq-icon-box"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Podés escribirnos directamente por WhatsApp indicando el tipo de equipo, la falla o la instalación que necesitás. Te responderemos a la brevedad para coordinar la visita y brindarte un presupuesto transparente sin costos ocultos.</p>
           </div>
         </div>
       </div>
 
-      <div class="card-test fade-up d2">
-        <div class="quote-mark">"</div>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <blockquote>Arreglaron la heladera de mi local en pocas horas. Sin ElectroFrio perdía toda la mercadería. Técnicos muy eficientes y con precios justos.</blockquote>
-        <div class="test-author">
-          <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-          <div>
-            <p class="author-name">Carlos P.</p>
-            <p class="author-label">Dueño de local — La Rioja</p>
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span class="faq-q-text">¿Los trabajos y reparaciones tienen garantía?</span>
+          <span class="faq-icon-box"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Sí, absolutamente todos nuestros servicios cuentan con garantía escrita. Trabajamos con técnicos matriculados bajo normas de seguridad oficiales y utilizamos repuestos e insumos de primera calidad.</p>
           </div>
         </div>
       </div>
 
-      <div class="card-test fade-up d3">
-        <div class="quote-mark">"</div>
-        <div class="stars">
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-          <i class="fa-solid fa-star"></i>
-        </div>
-        <blockquote>Contraté el plan de mantenimiento anual y es lo mejor que hice. Mis equipos rinden mejor y el técnico siempre llega puntual. Muy buena atención.</blockquote>
-        <div class="test-author">
-          <div class="author-avatar"><i class="fa-solid fa-user"></i></div>
-          <div>
-            <p class="author-name">Laura M.</p>
-            <p class="author-label">Administradora — La Rioja</p>
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span class="faq-q-text">¿Atienden urgencias en heladeras comerciales y locales?</span>
+          <span class="faq-icon-box"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Sí, damos prioridad inmediata a locales comerciales, restaurantes y supermercados para evitar pérdidas de mercadería por fallas en heladeras exhibidoras, bateas o cámaras frigoríficas.</p>
           </div>
         </div>
       </div>
 
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span class="faq-q-text">¿Qué medios de pago reciben?</span>
+          <span class="faq-icon-box"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Aceptamos transferencias bancarias, Mercado Pago, efectivo y tarjetas de débito o crédito. Emitimos comprobantes oficiales por cada servicio brindado.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" type="button" aria-expanded="false">
+          <span class="faq-q-text">¿Cuál es la zona de cobertura en La Rioja?</span>
+          <span class="faq-icon-box"><i class="fa-solid fa-plus"></i></span>
+        </button>
+        <div class="faq-answer">
+          <div class="faq-answer-inner">
+            <p>Cubrimos toda la ciudad de La Rioja Capital y alrededores, atendiendo domicilios particulares, comercios, complejos gastronómicos e industrias.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

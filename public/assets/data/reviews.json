@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "autor": "Marcela Gómez",
+    "avatar": "M",
+    "fecha": "Hace 2 semanas",
+    "estrellas": 5,
+    "texto": "Excelente servicio. Vinieron rápido y solucionaron el problema del aire acondicionado en una sola visita. Muy prolijos y profesionales. ¡100% recomendados!",
+    "verificado": true
+  },
+  {
+    "id": 2,
+    "autor": "Carlos Páez",
+    "avatar": "C",
+    "fecha": "Hace 1 mes",
+    "estrellas": 5,
+    "texto": "Arreglaron la heladera exhibidora de mi local en pocas horas. Sin ElectroFrio perdía toda la mercadería de la semana. Técnicos muy eficientes y con precios justos.",
+    "verificado": true
+  },
+  {
+    "id": 3,
+    "autor": "Laura Mercado",
+    "avatar": "L",
+    "fecha": "Hace 2 meses",
+    "estrellas": 5,
+    "texto": "Contraté el mantenimiento para los aires del local y es lo mejor que hice. Mis equipos rinden mejor, consumen menos y el técnico siempre llega puntual con matrícula CACAAV.",
+    "verificado": true
+  }
+]
+
