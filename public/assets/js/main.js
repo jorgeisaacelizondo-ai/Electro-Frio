@@ -61,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
   form?.addEventListener('submit', (e) => {
     e.preventDefault();
     const nombre   = form.querySelector('[name="nombre"]')?.value?.trim()   || '';
-    const telefono = form.querySelector('[name="telefono"]')?.value?.trim() || '';
     const servicio = form.querySelector('[name="servicio"]')?.value          || '';
     const mensaje  = form.querySelector('[name="mensaje"]')?.value?.trim()  || '';
 
@@ -71,7 +70,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let text = `Hola! Mi nombre es *${nombre}*.`;
-    if (telefono) text += `\nTeléfono: ${telefono}`;
     if (servicio) text += `\nServicio consultado: *${servicio}*`;
     text += `\n\n*Mensaje:*\n${mensaje}`;
 

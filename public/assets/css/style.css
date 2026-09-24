@@ -1087,6 +1087,173 @@ input,textarea,select,button { font-family:inherit; }
 }
 
 /* ================================================
+   NUESTRO EQUIPO
+   ================================================ */
+#equipo {
+  background: var(--navy-deep);
+}
+
+.equipo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.equipo-card {
+  background: rgba(13, 31, 60, 0.65);
+  border: 1px solid rgba(0, 212, 255, 0.12);
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition: all 0.35s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.equipo-card:hover {
+  border-color: rgba(0, 212, 255, 0.4);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5), 0 0 24px rgba(0, 212, 255, 0.12);
+  transform: translateY(-4px);
+}
+
+.equipo-photo-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--navy-card);
+}
+
+.equipo-photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.5s ease;
+  display: block;
+}
+
+.equipo-card:hover .equipo-photo-wrap img {
+  transform: scale(1.05);
+}
+
+.equipo-badge {
+  position: absolute;
+  bottom: 0.85rem;
+  left: 0.85rem;
+  background: rgba(0, 212, 255, 0.15);
+  border: 1px solid rgba(0, 212, 255, 0.4);
+  backdrop-filter: blur(10px);
+  color: var(--neon);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.equipo-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  flex-grow: 1;
+}
+
+.equipo-nombre {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.25;
+}
+
+.equipo-cargo {
+  font-size: 0.8rem;
+  color: var(--neon);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+}
+
+.equipo-cargo i {
+  font-size: 0.72rem;
+}
+
+.equipo-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-top: 0.15rem;
+}
+
+.equipo-desc strong {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 600;
+}
+
+.equipo-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+}
+
+.equipo-tags span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.73rem;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--r-sm);
+  padding: 0.25rem 0.6rem;
+}
+
+.equipo-tags span i {
+  color: var(--neon);
+  font-size: 0.7rem;
+}
+
+/* Barra de técnicos ayudantes */
+.equipo-apoyo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 860px;
+  margin: 2rem auto 0;
+  padding: 1.1rem 1.5rem;
+  background: rgba(0, 212, 255, 0.04);
+  border: 1px solid rgba(0, 212, 255, 0.14);
+  border-radius: var(--r-lg);
+}
+
+.equipo-apoyo i {
+  font-size: 1.4rem;
+  color: var(--neon);
+  flex-shrink: 0;
+}
+
+.equipo-apoyo p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.equipo-apoyo strong {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ================================================
    FAQ (Preguntas Frecuentes - UI/UX Pro Max)
    ================================================ */
 #faq {
@@ -1689,6 +1856,24 @@ footer {
   .elfsight-widget-container {
     min-height: 200px;
   }
+
+  /* Equipo (Mobile) */
+  .equipo-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    margin-top: 2rem;
+  }
+  .equipo-info {
+    padding: 1.2rem;
+  }
+  .equipo-nombre { font-size: 1rem; }
+  .equipo-apoyo {
+    padding: 1rem 1.1rem;
+    gap: 0.85rem;
+  }
+  .equipo-apoyo i { font-size: 1.2rem; }
+  .equipo-apoyo p { font-size: 0.84rem; }
+
   .ghc-left {
     gap: 0.9rem;
   }
